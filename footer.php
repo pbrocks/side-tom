@@ -1,0 +1,46 @@
+	<div id="footer" >
+		
+		<?php // Get the appropriate sidebar.
+		if ( is_front_page() && is_active_sidebar( 'footer_home' ) ) :
+			$sidebar = 'footer_home';
+		elseif ( is_archive() && is_active_sidebar( 'footer_posts' ) ) :
+			$sidebar = 'footer_posts';
+		elseif ( is_single() && is_active_sidebar( 'footer_posts' ) ) :
+			$sidebar = 'footer_posts';
+		elseif ( is_home() && is_active_sidebar( 'footer_posts' ) ) :
+			$sidebar = 'footer_posts';
+		elseif ( is_page() && is_active_sidebar( 'footer_pages' ) ) :
+			$sidebar = 'footer_pages';
+		else :
+			$sidebar = 'footer_default';
+		endif; ?>
+		<?php if ( function_exists( 'get_widgets_count' ) && get_widgets_count( $sidebar ) > 0 ) : ?>
+		<div class="main">
+			<div class="inside clearfix">	
+				<?php dynamic_sidebar( $sidebar ); ?>
+			</div><!-- end footer inside-->					
+		</div><!-- end footer main -->							
+		<?php endif; ?>	
+		
+		<div class="secondary">
+			<div class="inside clearfix">	
+			<?php $footer_left = get_theme_mod( 'sidetrackfooter_left' ); ?>
+			<?php $footer_right = get_theme_mod( 'sidetrackfooter_right' ); ?>
+			<div class="left"><p>
+
+			<?php
+			if ( $footer_left ) {
+				echo( $footer_left );} else {
+				?>
+		<?php echo __FILE__ . ' line ' . __LINE__; ?>
+				&copy; <?php echo date( 'Y' ); ?> <a href="<?php bloginfo( 'url' ); ?>"><strong><?php bloginfo( 'name' ); ?></strong></a> All Rights Reserved. <a href = "https://hiveio.sidetrack.site/privacy-policy/" target = "_self"> Privacy Policy</a><?php }; ?></p></div>
+			<div class="right"><p><?php echo $footer_right; ?></p>
+			</div>
+			</div><!-- end footer inside-->		
+		</div><!-- end footer secondary-->		
+		
+	</div><!-- end footer -->
+</div><!-- end container -->
+<?php wp_footer(); ?>
+</body>
+</html>

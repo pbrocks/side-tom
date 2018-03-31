@@ -1,0 +1,52 @@
+#top-menu {
+	border: 1rem solid green;
+}
+#logo {
+	border: 1rem solid pink;
+}
+#middle {
+	border: 1rem solid yellow;
+}
+#inner {
+	border: 1rem solid maroon;
+}
+#content-header {
+	border: 1rem solid navy;
+}
+#content-header {
+	/*border: 1rem solid red;*/
+}
+.page-title {
+	border: 1rem solid tan;
+}
+.main-content {
+	border: 1rem solid violet;
+}
+
+.page-graphic {
+	border: 1rem solid tomato;
+	height: 5rem;
+}
+
+.rotator {
+	border: 1rem solid aqua;
+	height: 15rem;
+}
+
+.benefits {
+  border: 1rem solid teal;
+  height: 5rem;
+}
+
+.cta {
+  grid-area: cta;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-top: 8rem;
+  background-color: #039BE5;
+  border: 1rem solid salmon;
+}
+
+.cta-form {
+  padding: 2rem;
+}

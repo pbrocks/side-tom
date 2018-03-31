@@ -1,0 +1,123 @@
+@media screen  and (min-width: 1025px) {
+
+
+}
+@media screen  and (max-width: 1024px) {
+
+}
+body {
+    background-color: #fff!important;
+}
+.page-title {
+		display: none;
+		}
+.grid-wrapper {
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 4fr 2fr;
+	grid-template-areas: 
+	"search"
+	"nav"
+	"sidebar";
+}
+#content  {
+    position: relative;
+    top: 10rem;
+}
+.home #content  {
+    top: 0rem;
+}
+
+@media screen  and (min-width: 1025px) {
+	.page-title {
+		display: block;
+		position: relative;
+		top: 5rem;
+		z-index: 444;
+		right: 8rem;
+		font-weight: 800;
+		text-align: center;
+		font-size: 3rem;
+		color: #A4D05F;
+		font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	}
+	.grid-wrapper {
+		display: grid;
+		height: 100vh;
+	}
+	#content-header {
+		position: fixed;
+		width: 100%;
+		z-index: 444;
+		height: 11rem;
+		box-shadow:0 0 10px black;
+		background-color: #ffffff;
+		background-image: url('//hiveio.sidetrack.site/wp-content/uploads/2018/01/header-art1.jpg');
+		background-repeat: no-repeat;
+	    background-position: right;
+	}
+
+}
+@media screen  and (max-width: 1024px) {
+	#container {
+		/*display: grid;*/
+		grid-template-columns: 1fr;
+		/*grid-template-rows: 1fr 4fr 2fr;*/
+		grid-template-areas: 
+		"search"
+		"logo"
+		"content";
+	}
+	#logo-search {
+		text-align: center;
+		grid-area: search;
+	}
+
+	#content {
+		grid-area: content;
+	}
+}
+@media screen  and (max-width: 849px) {
+	#mainNav {
+		grid-area: nav;
+	}
+
+	#header-sidebar {
+		grid-area: sidebar;
+	}
+	#header #sidebar {
+	    margin-bottom: 3px;
+	    padding-top: 2px;
+	}
+	#header  #sidebar .widgetBox {
+	    margin-bottom: 1rem;
+	}
+}
+
+
+/**
+ *@media screen  and (max-width: 1019px) {
+#logo {
+    width: 30%;
+    position: fixed;
+    left: 13rem;
+    top: 7rem;
+}
+}
+#content {
+    padding: 10rem 1rem;
+}
+#logo  {
+    width: 20%;
+    position: fixed;
+    left: 17rem;
+    z-index: 222222;
+    top: 3rem;
+}
+.icon-white {
+	color: #002959;
+	padding: 1rem;
+}
+
+ *
+ * 
+ */

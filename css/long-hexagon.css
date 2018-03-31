@@ -1,0 +1,32 @@
+.long-hexagon  {
+    width: 10.0rem;
+    height: 3rem;
+    border-top: .3rem solid #A4D05F;
+    border-bottom: .3rem solid #A4D05F;
+    position: relative;
+    background: #A4D05F;
+    margin: 1rem auto;
+    padding: .4rem .64rem;
+}
+.long-hexagon:before,
+.long-hexagon:after {
+    content: "";
+    width: 2.15rem;
+    height: 2.15rem;
+    position: absolute;
+    background: #A4D05F;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.long-hexagon:before {
+    border-left: .3rem solid #A4D05F;
+    border-bottom: .3rem solid #A4D05F;
+    top: 2px;
+    left: -1.1rem;
+}
+.long-hexagon:after {
+    border-right: .3rem solid #A4D05F;
+    border-top: .3rem solid #A4D05F;
+    top: 2px;
+    right: -1.15rem;
+}

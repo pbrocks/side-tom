@@ -1,0 +1,101 @@
+.widgetBox .button-side.email.dark-blue a, a#dark-blue-email {
+	color: #002959;
+}
+p {
+	font-size: 1.1rem;
+}
+
+/**** This is the 3-col grid on the interior pages  ****/
+.column-third {
+display: grid;
+grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+grid-column-gap: 2em;
+margin-top: 3em;
+margin-bottom: 2em;
+}
+/**** This is styling for p text in the 3-col grid on the interior pages  ****/
+.col-box p{
+line-height: 1.5em;
+}
+
+.tt_sc {
+	line-height: 1.5rem;
+}
+
+.icon-white {
+	color: #002959;
+	padding: 1rem;
+}
+
+.button-side {
+	border-radius: 20px;
+	background-color: #8DDEF9;
+	padding: 10px 15px;
+	margin-left: .75rem;
+	width: 80%;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	display: inline-block;
+	font-size: .75rem;
+	cursor: pointer;
+	transition: all 0.3s;
+	border:none;
+}
+
+.button-side:hover {
+	border-radius: 20px;
+	background: #white;
+	color: #002959;
+}
+
+.button-side.email:before {
+	content: '\f0e0';
+	font-family: FontAwesome;
+	padding-right: 5px;
+}
+
+#pageHead h1 {
+	font-size: 3rem;
+	padding: 0;
+	margin-bottom: 0;
+	display: inline-block;
+	font-weight: 800;
+	color: #A4D05F;
+}
+
+.slide .details h1, .slide .details h2, .slide .details h3, .slide .details h4, .slide .details h5{
+	color: #fff;
+	text-shadow: 2px 2px rgba(0,0,0, .2);
+	line-height: 1em;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
+
+#s {
+	margin: 0 0 2rem 0;
+	border-radius: 20px;
+	border:none;
+	padding: .3rem .6rem;
+	line-height: normal;
+	width: 80%;
+	color: #fff;
+	font-size: .8em;
+	background: #8ddef9;
+}
+
+.home #slideshowNav a.active {
+	background: #FFE600;
+}
+
+.home #slideshowNav a {
+	background: white;
+}
+
+#pageHead {
+	border-bottom: none;
+}
+.post .meta {
+	display: none;
+}

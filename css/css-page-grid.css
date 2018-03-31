@@ -1,0 +1,117 @@
+#inner {
+	display:grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"page-title"
+	"main-content"
+	"page-graphic"
+	"rotator"
+	"benefits"
+	"cta";
+}
+.page-title {
+	grid-area: page-title;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.main-content {
+	grid-area: main-content;
+	display: grid;
+	grid-template-columns: 5fr 6fr;
+}
+
+.page-graphic {
+	grid-area: page-graphic;
+}
+
+.page-graphic-title {
+	margin-top: 5rem;
+	text-align: center;
+}
+
+.page-graphic-title h3 {
+	color: #002959;
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.page-graphic-image {
+	width: 80%;
+	margin-top: 5rem;
+	margin: 0 auto;
+}
+
+.rotator {
+	grid-area: rotator;
+	display: grid;
+	justify-items: center;
+	margin-top: 5rem;
+}
+
+.rotator h3 {
+	font-size: 1.3rem;
+	margin: 1.2rem 3rem 1rem;
+	color: white;
+	text-align: center;
+}
+
+.rotator-title {
+	margin: 10rem;
+	background-color: #039BE5;
+	margin: 0 auto;
+}
+
+.rotator-content {
+	margin-top: 5rem;
+	display: grid;
+	grid-template-columns: 5% 30% 60% 5%;
+}
+
+.rotator-intro {
+	grid-column-start: 2;
+}
+
+.testimonial_rotator_wrap.with-prevnext {
+	overflow: visible;
+}
+
+.benefits-title {
+	text-align: center;
+	margin-top: 7rem;
+}
+
+.benefits-content {
+	grid-area: benefits;
+	display: grid;
+	grid-gap: 5rem;
+	grid-template-columns: 3fr 3fr 3fr;
+	margin-top: 5rem;
+	margin-right: 5rem;
+	margin: 0 auto;
+}
+
+.cta {
+	grid-area: cta;
+	display: grid;
+	grid-template-columns: 40% 60%;
+	margin-top: 8rem;
+	background-color: #039BE5;
+}
+
+.call-to-action-head h3 {
+	color: #fff;
+	text-align: center;
+	font-size: 1.7rem;
+	font-weight: bold;
+	margin-top: 1rem;
+}
+
+.cta-form {
+	padding: 2rem;
+}
+
+.call-to-action-head > .cta-image > img {
+	width: 90%;
+	margin: 0 auto;
+}
