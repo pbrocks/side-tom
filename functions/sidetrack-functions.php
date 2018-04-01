@@ -1,7 +1,6 @@
 <?php
 
-include( 'swipe-shortcode.php' );
-
+// include( 'swipe-shortcode.php' );
 add_action( 'wp_enqueue_scripts', 'sidetrack_styles' );
 
 function sidetrack_styles() {

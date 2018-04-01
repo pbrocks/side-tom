@@ -12,7 +12,7 @@ require_once( TEMPLATEPATH . '/admin/widgets.php' );
  */
 require_once( TEMPLATEPATH . '/functions/sidetrack-customizer.php' );
 require_once( TEMPLATEPATH . '/functions/sidetrack-functions.php' );
-
+require_once( TEMPLATEPATH . '/functions/swipe-shortcode.php' );
 // Mobile device detection
 if ( ! function_exists( 'mobile_user_agent_switch' ) ) {
 	function is_mobile() {

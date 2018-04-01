@@ -1,0 +1,111 @@
+
+section {
+  margin-right: 2rem;
+}
+
+#swipe-inner{
+  border: 1rem solid salmon;
+}
+
+#swipe-wrapper{
+  position: relative;
+  width: 100%;
+  min-height:55vw;
+  overflow: hidden;
+}
+
+.layer{
+  position:absolute;
+  width:100%;
+  min-height: 55vw;
+  overflow: hidden;
+}
+
+.layer .swipe-wrap {
+  position: absolute;
+  width: 100%;
+  min-height: 55vw;
+}
+
+.layer .swipe-body {
+  width: 45%;
+  position:absolute;
+/*   top:50%; */
+  top: 25%;
+  text-align: center;
+  transform:translateY(-50%);
+  color:#fff;
+}
+
+.layer img{
+  position:absolute;
+/*   width:65%; */
+/*width: 35%    */
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+.bottom {
+  background-color: salmon;
+  z-index:1;
+  background-image:  url('https://images.unsplash.com/photo-1494005612480-90f50fd9376f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=36d7fc577cf6a4527cbee851db481b8c&auto=format&fit=crop&w=753&q=80');
+background-repeat: no-repeat;
+ background-size: cover;
+  background-position: 50% 5%;
+  right:1%;
+}
+
+.bottom .swipe-body {
+  right:15%;
+  padding: 1rem;
+}
+
+.bottom h1 {
+  color:#7bbe9a;
+}
+
+.top {
+  z-index:2;
+/*   width:50vw; */
+background-color: aliceblue;
+  background-image: url('https://images.unsplash.com/photo-1506328962840-ff6790651285?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0216f5c81ee7481941d551b4113b1ca7&auto=format&fit=crop&w=750&q=80');
+background-repeat: no-repeat;
+ background-size: cover;
+  background-attachment: fixed;
+  background-position: center bottom;
+}
+
+.top .swipe-body {
+/*   right:5%; */
+  color:#39a9d6;
+  padding: 1rem;
+}
+
+.handle {
+  position: absolute;
+  height: 100%;
+  display: block;
+  /*background-color: #7bbe9a;*/
+  width: 5px;
+  top:0;
+  left: 50%;
+  z-index:3;
+}
+
+.skewed .handle{
+/*   top:50%; */
+/*   transform:rotate(30deg) translateY(-50%); */
+  height: 200%;
+  transform-origin:top;
+}
+
+.skewed .top {
+/*   transform: skew(-30deg); */
+  margin-left:-1000px;
+  width: calc(50vw + 1000px);
+}
+
+.skewed .top .swipe-wrap {
+/*   transform: skew(30deg); */
+  margin-left:1000px;
+}
